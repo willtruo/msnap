@@ -1,0 +1,257 @@
+/*FONT IMPORT*/
+@font-face {
+    font-family:'Myriad';
+    src: url(../fonts/MyriadPro-Regular.otf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family:'Minion';
+    src: url(../fonts/MinionPro-Regular.otf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap');
+
+@font-face{
+    font-family:'Roboto';
+    src:url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap');
+    font-weight:normal;
+    font-style:normal;
+}
+
+
+/*NAVIGATION STYLING*/
+nav ul
+{
+    margin-top:20px;
+    list-style: none;
+    padding:0;
+    text-align: center;
+    
+}
+/*NAV LIST ITEM STYLING*/
+nav li
+{
+    font-family:'Roboto';
+    font-weight:100;
+    width: 150px;
+    height: 40px;
+    line-height: 40px; 
+    margin: 0 auto;
+    display: inline-block;
+    font-size: 1.2em;
+
+}
+
+/*STYLING TO DIFFERENTIATE WHICH PAGE USER IS ON*/
+#currentPage{
+        font-weight:400;
+        border-bottom: 1px dotted #999999;
+}
+
+/*NAV LINK STYLING*/
+nav li a
+{
+    text-decoration: none;
+    color: black;
+    /*background-color: #666;*/
+    display: block;
+    text-align: center;
+    transition: background-color 1.0s ease;
+    transition: color 1.0s ease;
+    /* background-color can also be "all" to apply to all hover changes */
+
+  
+    
+}
+
+/*LINK HOVER STYLING*/
+a:hover{
+    font-weight:400;
+}
+
+/*NAV LINK BORDER BAR,NOT USED CURRENTLY
+nav .navleft
+{
+    border-right: 1px black solid;
+}
+*/
+
+/*GENERAL BODY STYLING*/
+body {
+	font-size: 1em;
+	width: 45em;
+	margin: auto;
+    font-family: 'Roboto';
+    
+    
+/*STYLING FOR BACKGROUND IMG*/
+background-image: src("backimg2.png");
+background-repeat: no-repeat;
+
+}
+
+/*PARAGRAPH STYLING*/
+p {
+	font-family: 'Roboto', sans-serif;
+	margin: 0;
+	text-indent: 2.5em;
+	font-size: 1em;
+	line-height: 1.5em;
+    margin-bottom: 10px;
+}
+
+/*CENTER PARAGRAPH*/
+.centertext{
+    text-align: center;
+}
+
+/*STYLING FOR DECK*/
+p.deck {
+	font-family: 'Myriad', sans-serif;
+	text-indent: 0;
+	text-transform: uppercase;
+	letter-spacing: 0.2em;
+	font-size: 0.8em;
+    font-weight:600;
+	padding-bottom: 4px;
+	border-bottom: 1px solid #999999;
+	margin-bottom 4px;
+    text-align: center;
+}
+
+/*DECK LEFT ALIGN*/
+p.deck1 {
+	font-family: 'Myriad', sans-serif;
+	text-indent: 0;
+	text-transform: uppercase;
+	letter-spacing: 0.2em;
+	font-size: 0.8em;
+    font-weight:600;
+	padding-bottom: 4px;
+	border-bottom: 1px solid #999999;
+	margin-bottom 4px;
+}
+p.highlight {
+font-weight:500;
+}
+
+/*HEADER STYLING*/
+h1 {
+	font-family: 'Roboto', sans-serif;
+    font-weight:600;
+	text-transform: uppercase;
+    letter-spacing: 5px;
+    margin: 0.7em 0 0 0;
+	font-size: 2.5em;
+}
+
+/*BLOCK QUOTE STYLING*/
+blockquote {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 400;
+	font-style: italic;
+	font-size:1.5em;
+	line-height: 1.3em;
+
+	width: 35%;
+	float: right;
+	margin: 0.4em 0em 1em 0.8em;
+	text-indent: -0.4em;
+}
+
+/*QUOTE AUTHOR STYLING*/
+blockquote .quote{
+    font-size:1rem;
+    font-weight:300;
+    text-align: right;
+    padding:0;
+    padding-right: 25px;
+    margin:0;
+    font-family: 'Roboto';
+}
+
+/*FONT TABLES STYLING*/
+table {
+    border-collapse: collapse;
+    width: 100%;
+    font-family: 'Roboto';
+}
+
+/*TABLE HEADER AND TABLE DETAILS STYLING*/
+th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px dotted #999999;
+}
+
+/*TABLE HEADER ALIGN*/
+th{
+    text-align: center;
+}
+
+/*SMALLER FONT STYLING FOR TABLE NOTES*/
+td.notes{
+    font-size:1em;
+}
+
+/*ITERATION NUMBER*/
+td.itnumber{
+    font-size:1.5em;
+    text-align: center;
+    font-weight:600;
+}
+
+/*STYLING FOR MOUSE HOVER OVER TABLE*/
+tr:hover{background-color:#f5f5f5}
+
+/*STYLING FOR BACKGROUND/HERO IMAGE*/
+.backgroundimg
+{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+padding-bottom: 30px;
+  width: 50%;
+}
+
+/*STYLING FOR TABLE IMAGE*/
+.tableimg
+{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+}
+
+/*STYLING FOR FORM*/
+input[type=text], select {
+    font-family: 'Roboto', sans-serif;
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit]{
+    font-family: 'Roboto', sans-serif;
+width: 100%;
+  background-color: #ccc;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+border: 1px solid #ccc;
+  border-radius: 4px;
+  cursor: pointer;
+    text-transform: uppercase;
+	letter-spacing: 0.2em;
+	font-size: 0.8em;
+}
+}
